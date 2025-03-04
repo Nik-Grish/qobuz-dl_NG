@@ -14,16 +14,16 @@ QL_DOWNGRADE = "FormatRestrictedByFormatAvailability"
 # used in case of error
 DEFAULT_FORMATS = {
     "MP3": [
-        "{artist} - {album} ({year}) [MP3]",
+        "{artist} / {year} - {album} [MP3]",
         "{tracknumber}. {tracktitle}",
     ],
     "Unknown": [
-        "{artist} - {album}",
+        "{artist} / {year} - {album} ({bit_depth}bit-{sampling_rate}kHz)",
         "{tracknumber}. {tracktitle}",
     ],
 }
 
-DEFAULT_FOLDER = "{artist} - {album} ({year}) [{bit_depth}B-{sampling_rate}kHz]"
+DEFAULT_FOLDER = "{artist} / {year} - {album} ({bit_depth}bit-{sampling_rate}kHz)"
 DEFAULT_TRACK = "{tracknumber}. {tracktitle}"
 
 logger = logging.getLogger(__name__)
